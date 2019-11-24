@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.configuration.xml.reload" value="true" /> 
+	<constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+	<constant name="struts.action.extension" value="action,do,webwork" />
+
+	<package name="basePackage" namespace="/" extends="struts-default" >
+		<interceptors>
+			<interceptor name="myInterceptor"  class="interceptor.MyInterceptor"></interceptor>
+			<interceptor-stack name="myStack">
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+				<interceptor-ref name="myInterceptor"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		
+		<global-results>
+			<result name="error">/error.html</result>
+		</global-results>
+		<action name="addJob" class="action.AddJobAction">
+			<interceptor-ref name="myStack"></interceptor-ref>
+			<result>/add_success.html</result>
+			<result name="error">/error.html</result>
+			<result name="login">/login.html</result>
+		</action>
+		<action name="searchJobs" class="action.SearchJobsAction">
+			<interceptor-ref name="myStack"></interceptor-ref>
+			<result>/job_results.jsp</result>
+			<result name="login">/login.html</result>
+		</action>
+		<action name="searchPjobs" class="action.SearchPjobsAction">
+			<interceptor-ref name="myStack"></interceptor-ref>
+			<result>/job_user.jsp</result>
+			<result name="login">/login.html</result>
+		</action>
+		<action name="deleteJob" class="action.DeleteJobAction">
+			<interceptor-ref name="myStack"></interceptor-ref>
+			<result type="redirect">searchPjobs.action</result>
+			<result name="login">/login.html</result>
+		</action>
+		<action name="login" class="action.LoginAction">
+			<result>/index.jsp</result>
+			<result name="error">/error.html</result>
+		</action>
+		<action name="register" class="action.AddUserAction">
+			<result>/register_success.html</result>
+			<result name="error">/error.html</result>
+		</action>
+		<action name="updatePass" class="action.UpdatePassAction">
+			<result>/register_success.html</result>
+			<result name="error">/error.html</result>
+		</action>
+	</package>
+</struts>    

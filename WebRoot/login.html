@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>雪米登录</title>
+		<link rel="icon"type="image/x-icon" href="img/snowymoney.ico" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	</head>
+	<body>
+		<div class="logo_module">
+			<img src="img/whitesnowy.png" /><span>SnowyMoney</span>
+		</div>
+		<div class="border">
+			<form action="login.action" method="post">
+				<div class="input_outer">
+					<span class="u_user"></span>
+					<input name="userPhone" class="text"  type="text" placeholder="请输入您的手机号" id="useraccount">
+					<span id="errormsg1"></span>
+				</div>
+				<div class="input_outer">
+					<span class="u_pwd"></span>
+					<input name="userPassword" class="text" type="password" placeholder="请输入您的密码" id="userpassword">
+					<span id="errormsg2"></span>
+				</div>
+				<div class="mb2"><button type="submit" class="btn" value="input_button" onclick="checkChange()">登录</button></div>
+			</form>
+			<div class="mb2"><a href="register.html">没有账户?注册</a><a href="forgetpwd.html">忘记密码</a></div>
+		</div>
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/login.js"></script>
+</html>

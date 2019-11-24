@@ -1,0 +1,12 @@
+<Context> 
+  <Resource name="jdbc/DVD"
+             type="javax.sql.DataSource" 
+             auth="Container"
+             driverClassName="com.mysql.jdbc.Driver"
+             maxActive="100"
+             maxIdle="30" maxWait="10000"
+             url="jdbc:mysql://localhost:3306/SnowyMoney"
+             username="admin"
+             password="123456"/>
+</Context> 
+ 

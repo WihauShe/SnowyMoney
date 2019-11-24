@@ -1,0 +1,56 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 宋体, 楷体, Helvetica, sans-serif;
+}
+a{
+	text-decoration: none;
+}
+body{
+	width: 960px;
+	height: 700px;
+	background: url(../img/background.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+.logo_module img{
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	left: 50px;
+	top: 40px;
+}
+.logo_module span{
+	position: absolute;
+	top: 140px;
+	left: 23px;
+	font-size: 30px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.border{
+	margin-top: 18%;
+	margin-left: 30%;
+	height: 900px;
+	width: 800px;
+	border: 1px white solid;
+	background: rgba(255,255,255,0.6);
+	overflow: hidden;
+
+}
+table{
+	margin-left: 100px;
+	margin-top: 20px;
+	text-align:center;
+}
+table tr{
+	line-height: 20px;
+}
+table td{
+	padding-left:20px;
+}
+section{
+	overflow:scroll;
+}

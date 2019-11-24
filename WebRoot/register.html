@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>雪米注册</title>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+	</head>
+	<body>
+		<div class="border">
+			<form action="register.action" method="post">
+				<table>
+					<tr>
+						<td class="right"><label for="u_name">用户名:</label></td>
+						<td><input name="userName" type="text" id="u_name"></td>
+						<td><span id="errormsg1"></span></td>
+					</tr>
+					<tr>
+						<td class="right"><label for="u_phone">手机号:</label></td>
+						<td><input name="userPhone" type="text" id="u_phone" maxlength="11"></td>
+						<td><span id="errormsg2"></span></td>
+					</tr>
+					<tr>
+						<td class="right"><label for="u_sex">性别:</label></td>
+						<td>
+							<input name="userSex" type="radio" value="male">男
+							<input name="userSex" type="radio" value="female">女
+						</td>
+						<td><span id="errormsg3"></span></td>
+					</tr>
+					<tr>
+						<td class="right"><label for="u_age">年龄:</label></td>
+						<td><input name="userAge" type="text" id="u_age" maxlength="2"></td>
+						<td><span id="errormsg4"></span></td>
+					</tr>
+					<tr>
+						<td class="right"><label for="u_email">邮箱:</label></td>
+						<td><input name="userEmail" type="email" id="u_email"></td>
+						<td><span id="errormsg5"></span></td>
+					</tr>
+					<tr>
+						<td class="right"><label for="u_pwd1">密码:</label></td>
+						<td><input name="userPassword" type="password" id="u_pwd1"></td>
+						<td><span id="errormsg6"></span></td>
+					</tr>
+					<tr>
+						<td class="right"><label for="u_pwd2">再次输入密码:</label></td>
+						<td><input name="userpassword2" type="password" id="u_pwd2"></td>
+						<td><span id="errormsg7"></span></td>
+					</tr>
+					<tr>
+						<td><input type="submit" value="提交" id="bthsubmit" onclick="return checkchange()"></td>
+						<td class="right"><input type="reset" value="重置"></td>
+						<td></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/register.js"></script>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>SnowyMoney</title>
+		<link rel="icon"type="image/x-icon" href="img/snowymoney.ico" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<div class="logo_module">
+			<img src="img/whitesnowy.png" /><span>SnowyMoney</span>
+		</div>
+		<div class="login_module">
+			<span><a href="login.html" id="login">登录</a><a href="register.html" id="register">注册</a></span>
+		</div>
+		<div class="border">
+			<head>
+			<div class="nav">
+				<ul>
+					<li><a href="void:javascript(0);" id="home">首页</a></li>
+					<li><a href="void:javascript(0);" id="search" onclick="alert('请先登录');">寻找兼职</a></li>
+					<li><a href="void:javascript(0);" id="publish" onclick="alert('请先登录');">发布兼职</a></li>
+					<li><a href="void:javascript(0);" id="personal" onclick="alert('请先登录');">个人中心</a></li>
+				</ul>
+			</div>
+			
+			</head>
+			<section>
+				<div id="homepage">
+					
+				</div>
+				<div id="search_job">
+					<form action="#">
+						<table>
+							<tr>
+								<td><label for="category">种类:</label></td>
+								<td>
+									<select name="category" id="category">
+										<option value="temporary">临时工</option>
+										<option value="educator">家教</option>
+										<option value="salesman">促销</option>
+										<option value="poster">发单</option>
+										<option value="other">其他</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td><label for="sex">性别:</label></td>
+								<td>
+									<select name="sex" id="sex">
+										<option value="male">男</option>
+										<option value="female">女</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td><label for="place">地点:</label></td>
+								<td>
+									<select name="place" id="place">
+										<option value="inner">校内</option>
+										<option value="outer">校外</option>		
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="submit" value="查找"/></td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<div id="publish_job">
+					<form>
+						<table>
+							<tr>
+								<td><label for="category">种类:</label></td>
+								<td>
+									<select name="jobCategory" id="category">
+										<option value="temporary">临时工</option>
+										<option value="educator">家教</option>
+										<option value="salesman">促销</option>
+										<option value="poster">发单</option>
+										<option value="other">其他</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td><label for="sex">性别要求:</label></td>
+								<td>
+									<select name="jobSex" id="sex">
+										<option value="male">男</option>
+										<option value="female">女</option>
+										<option value="unlimit">不限</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td><label for="place">地点:</label></td>
+								<td>
+									<select name="jobPlace" id="place">
+										<option value="inner">校内</option>
+										<option value="outer">校外</option>		
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td><label for="demand">具体要求:</label></td>
+								<td><input type="text" name="jobDemand" id="demand"/></td>
+							</tr>
+							<tr>
+								<td><input type="submit" value="发布"/></td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<div id="personal_info">
+					<table>
+						<tr>
+							<td>用户名:</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>性别:</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>年龄:</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>余额:</td>
+							<td>米币</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</div>
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/index.js"></script>
+</html>

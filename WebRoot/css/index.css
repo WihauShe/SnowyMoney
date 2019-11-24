@@ -1,0 +1,104 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 宋体, 楷体, Helvetica, sans-serif;
+}
+a{
+	text-decoration: none;
+}
+body{
+	width: 960px;
+	height: 1024px;
+	background: url(../img/background.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+.logo_module img{
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	left: 50px;
+	top: 40px;
+}
+.logo_module span{
+	position: absolute;
+	top: 140px;
+	left: 23px;
+	font-size: 30px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.login_module{
+	width: 8%;
+	height: 2%;
+	position: absolute;
+	top: 11%;
+	right: 7%;
+	color: white;
+}
+#login{
+	color: white;
+	margin-right: 10px;
+}
+#register{
+	color: white;
+}
+.border{
+	margin-top: 5%;
+	margin-left: 25%;
+	height: 800px;
+	width: 760px;
+	border: 1px white solid;
+	background: rgba(255,255,255,0.6);
+	overflow: hidden;
+}
+head{
+	text-align: center;
+	
+}
+.nav{
+	float: left;
+	height: 20px;
+	width: 100%;
+	margin-top: 2%;
+	padding-left: 19%;
+	padding-bottom: 1%;
+	border-bottom: 1px white solid;
+	
+}
+.nav ul{
+	list-style: none;
+}
+.nav ul li{
+	float: left;
+	text-align: center;
+	padding: 0 30px;
+}
+.nav ul li a{
+	color: #000000;
+}
+.nav ul li a:hover{
+	color: #6E6E6E;
+}
+#search_job,#publish_job,#personal_info{
+	margin-left: 330px;
+	margin-top: 20px;
+}
+table{
+	line-height: 100px;
+	
+}
+select{
+	width: 80px;
+	height: 20px;
+}
+input[type=submit]{
+	width: 60px;
+	height: 20px;
+	background: none;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin-left: 20px;
+}

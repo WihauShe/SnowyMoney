@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>雪米忘记密码</title>
+		<link rel="stylesheet" type="text/css" href="css/forgetpwd.css"/>
+	</head>
+	<body>
+		<div class="border">
+			<form action="updatePass.action" method="post">
+				<div class="input_outer">
+					<span class="u_user"></span>
+					<input name="userPhone" class="text"  type="text" placeholder="请输入您的手机号" id="useraccount">
+					<span id="errormsg1"></span>
+				</div>
+				<div class="input_outer">
+					<span class="u_email"></span>
+					<input name="userEmail" class="text" type="email" placeholder="请输入您的邮箱" id="useremail">
+					<span id="errormsg2"></span>
+				</div>
+				<div class="input_outer">
+					<span class="u_pwd"></span>
+					<input name="userPassword" class="text" type="password" placeholder="请输入您的新密码" id="userpassword1">
+					<span id="errormsg3"></span>
+				</div>
+				<div class="input_outer">
+					<span class="u_pwd"></span>
+					<input name="pass" class="text" type="password" placeholder="请再次输入您的密码" id="userpassword2">
+					<span id="errormsg4"></span>
+				</div>
+				<div class="mb2"><button type="submit" class="btn" value="input_button" onclick="return checkChange()">提交</button></div>
+			</form>
+			<div class="mb2"><a href="register.html">没有账户?注册</a></div>
+		</div>
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/forgetpwd.js"></script>
+</html>

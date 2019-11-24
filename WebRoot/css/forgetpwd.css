@@ -1,0 +1,97 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 宋体, 楷体, Helvetica, sans-serif;
+}
+a{
+	text-decoration: none;
+}
+body{
+	width: 960px;
+	height: 700px;
+	background: url(../img/background.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+.border{
+	margin-top: 18%;
+	margin-left: 60%;
+	height: 300px;
+	width: 500px;
+	border: 1px white solid;
+	background: rgba(255,255,255,0.6);
+	overflow: hidden;
+	border-radius: 10px;
+	text-align: center;
+}
+form{
+	margin-top: 5%;
+	margin-left: 20%;
+}
+.input_outer{
+	width: 300px;
+	height: 60px;
+}
+input{
+	width: 300px;
+	height: 25px;
+}
+.text{
+	color: #FFFFFF !important
+	width: 220px;
+	height: 46px;
+	outline: none;
+	display: inline-block;
+	font: 14px "microsoft yahei",Helvetica,Tahoma,Arial,"Microsoft jhengHei";
+	margin-left: 50px;
+	border: none;
+	background: none;
+	line-height: 46px;
+}
+.u_user{
+	width: 25px;
+	height: 25px;
+	background: url(../img/login_ico.png);
+	background-position:  -125px 0;
+	position: absolute;
+	margin: 10px 13px;
+}
+.u_email{
+	width: 25px;
+	height: 25px;
+	background: url(../img/login_ico.png);
+	background-position:  -85px 0;
+	position: absolute;
+	margin: 10px 13px;
+}
+.u_pwd{
+	width: 25px;
+	height: 25px;
+	background-image: url(../img/login_ico.png);
+	background-position: -125px -34px;
+	position: absolute;
+	margin: 10px 13px;
+}
+button[type=submit]{
+	height: 35px;
+	width: 200px;
+	border: 1px black solid;
+	background: none;
+	line-height: 20px;
+	border-radius: 15px;
+	margin-right: 80px;
+}
+.mb2{
+	margin-top: 5px;
+	margin-bottom: 15px
+}
+.mb2 a{
+	margin-right: 10px;
+	margin-left: 10px;
+	color: #000000;
+}
+.mb2 a:hover{
+	color: #6e6e6e;
+}
